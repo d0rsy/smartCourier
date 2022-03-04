@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SC - Trends</title>
+        <!-- Results of historical data analysis. Best days of week, hours of each day, delivery apps, weather (or weather patterns) and -with enough data-, seasonal trends. -->
+    </head>
+    <body>
+        <header>
+            <h1>SmartCourier</h1>
+            <nav>
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="me.html">
+                        <li>Me</li>
+                    </a>
+                    <a href="trends.html">
+                        <li>Trends</li>
+                    </a>
+                    <a href="map.html">
+                        <li>Money Map</li>
+                    </a>
+                    <a href="leaderboard.html">
+                        <li>Leaderboard</li>
+                    </a>
+                    <a href="login.html">
+                        <li><button>Login</button></li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="trendview">
+                <div id="cal_settings">
+                    <!-- Show, Filter, Settings-->
+                    <div id="show_data">
+                        <input type="checkbox" name="earnings_rate" value="show">
+                        <label>Show $/Hour</label>
+                        <input type="checkbox" name="weather" value="show">
+                        <label>Show Weather</label>
+                        <input type="checkbox" name="boosters" value="show">
+                        <label>Show Holidays and Promotions</label>
+                    </div>
+                    <br>
+                    <div id="filters">
+                        <label>Filter by Area:</label>
+                        <select name="area" multiple>
+                            <option value="Highbridge">Highbridge</option>
+                            <option value="Harlem">Harlem</option>
+                            <option value="UWS">UWS</option>
+                            <option value="UES">UES</option>
+                            <option value="Midtown">Midtown</option>
+                            <option value="Greenwich_Village">Greenwich Village</option>
+                            <option value="East_Village">East Village</option>
+                            <option value="Lower_Manhattan">Lower Manhattan</option>
+                        </select>
+                        <label>Filter by Company</label>
+                        <select name="company" multiple>
+                            <option value="Uber_Eats">Uber Eats</option>
+                            <option value="Grub_Hub">Grub Hub</option>
+                            <option value="Door_Dash">Door Dash</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div id="view_settings">
+                        <input type="checkbox" name="dark_mode" value="on">
+                        <label>Turn on Dark Mode</label>
+                        <br>
+                        <label>Select timeframe:</label>
+                        <input type="checkbox" name="daily" value="daily">
+                        <label>Day</label>
+                        <input type="checkbox" name="weekly" value="weekly">
+                        <label>Week</label>
+                        <input type="checkbox" name="monthly" value="monthly">
+                        <label>Month</label>
+                        <input type="checkbox" name="yearly" value="yearly">
+                        <label>Year</label>
+                    </div>
+                </div>
+                <div id="calendar">
+                    <!-- leaving a placeholder untill I learn css:-->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>3/1</th>
+                                <th>3/2</th>
+                                <th>3/3</th>
+                                <th>3/4</th>
+                                <th>3/5</th>
+                                <th>3/6</th>
+                                <th>3/7</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                                <td>00:00</td>
+                            </tr>
+                            <tr>
+                                <td>01:00</td>
+                                <td>01:00</td>
+                                <td>01:00</td>
+                                <td>01:00</td>
+                                <td>01:00</td>
+                                <td>01:00</td>
+                                <td>01:00</td>
+                            </tr>
+                            <tr>
+                                <td>02:00</td>
+                                <td>02:00</td>
+                                <td>02:00</td>
+                                <td>02:00</td>
+                                <td>02:00</td>
+                                <td>02:00</td>
+                                <td>02:00</td>
+                            </tr>
+                            <tr>
+                                <td>03:00</td>
+                                <td>03:00</td>
+                                <td>03:00</td>
+                                <td>03:00</td>
+                                <td>03:00</td>
+                                <td>03:00</td>
+                                <td>03:00</td>
+                            </tr>
+                            <tr>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h5>&copy; SmartCourier 2022   Contact: benkent15@gmail.com</h5>
+        </footer>
+    </body>
+</html>
