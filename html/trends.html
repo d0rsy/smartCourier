@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>SC - Trends</title>
-        <!-- Results of historical data analysis. Best days of week, hours of each day, delivery apps, weather (or weather patterns) and -with enough data-, seasonal trends. -->
+        <!-- Results of historical data analysis. Best days of week, hours of each day, delivery apps, weather (or weather patterns), seasonal trends. Map and Calendar view.-->
     </head>
     <body>
         <header>
@@ -27,11 +27,17 @@
                     <a href="login.html">
                         <li><button>Login</button></li>
                     </a>
+                    <a href="settings.html">
+                        <li>Settings</li>
+                    </a>
                 </ul>
             </nav>
         </header>
         <main>
-            <div id="trendview">
+            <h3>Earnings Trends</h3>
+            <p>Earnings data analysis. Check out the best times to work and apps to use based on historical data in the Map view. Use the Calendar to see predicted earnings based on historical data, weather trends and gig company promo launches. </p>
+            <div id="calendar_view">
+                <h4>Calendar</h4>
                 <div id="cal_settings">
                     <!-- Show, Filter, Settings-->
                     <div id="show_data">
@@ -142,6 +148,73 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div id="map_view">
+                <h4>Map</h4>
+                <div id="data_settings">
+                    <input type="checkbox" name="earnings" id="earnings" value="show">
+                    <label for="earnings">Earnings/Hour</label>
+                    <input type="checkbox" name="dead_time" id="dead_time" value="show">
+                    <label for="dead_time">Dead Time</label>
+                   
+                    <label for="start_date">Start Date</label>
+                    <input type="date" name="start_date" id="start_date">
+                    <label for="end_date">End Date</label>
+                    <input type="date" name="end_date" id="end_date">
+                  
+                    <label for="pick_days">Days of Week</label>
+                    <select name="pick_days" id="pick_days" multiple>
+                        <option value="all" selected>ALL</option>
+                        <option value="sun">Sunday</option>
+                        <option value="mon">Monday</option>
+                        <option value="tues">Tuesday</option>
+                        <option value="wed">Wednessday</option>
+                        <option value="thurs">Thursday</option>
+                        <option value="fri">Friday</option>
+                        <option value="sat">Saturday</option>
+                    </select>
+                    
+                    <label for="pick_hours">Hours</label>
+                    <select name="pick_hours" id="pick_hours" multiple>
+                        <option value="regular" selected> Typical Hours (11AM-10PM)</option>
+                        <option value="early">Early (1AM-7AM)</option>
+                        <option value="breakfast">Breakfast (7AM-11AM)</option>
+                        <option value="lunch">Lunch (11AM-2PM)</option>
+                        <option value="afternoon">Afternoon (2PM-5PM)</option>
+                        <option value="dinner">Dinner (5PM-9PM)</option>
+                        <option value="late">Late (9PM-1AM)</option>
+                        <option value="all">All hours</option>
+                    </select>
+                    <br>
+                    <input type="checkbox" name="custom_time" value="on" id="custom_time">
+                    <label for="custom_time">Custom Time Range</label>
+                    <p>** ^Fully customizable time range. Take days selected and allow user to select specific hour(s) on each day.</p>
+
+                    <label for="company">Filter by Company</label>
+                    <select name="company" id="company" multiple>
+                        <option value="ALL" selected>ALL</option>
+                        <option value="Uber_Eats">Uber Eats</option>
+                        <option value="Grub_Hub">Grub Hub</option>
+                        <option value="Door_Dash">Door Dash</option>
+                    </select>
+                </div>
+                <div id="map_display">
+                    <div id="display_settings">
+                        <label for="dark">Dark Mode</label>
+                        <input type="checkbox" id="dark" name="dark" value="on">
+                        <label for="map_style">Map Style</label>
+                        <select name="map_style" id="map_style">
+                            <option value="areamap" selected>Area Map</option>
+                            <option value="heatmap">Heatmap</option>
+                        </select>
+                    </div>
+                    <div id="map">
+                        <p>MAP DISPLAY</p>
+                    </div>
                 </div>
             </div>
         </main>

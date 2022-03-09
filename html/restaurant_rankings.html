@@ -27,9 +27,55 @@
                     <a href="login.html">
                         <li><button>Login</button></li>
                     </a>
+                    <a href="settings.html">
+                        <li>Settings</li>
+                    </a>
                 </ul>
             </nav>
         </header>
+        <main>
+            <h3>Restaurant Rankings</h3>
+            <p>This tool shows you all restaurants, sorted by wait times on pickup. This wait time isn't included in trip estimates and can reduce your profitablility if the payout isn't big enough to compensate for the wasted time. Use the Avoid List for your area to find the worst offenders based on the last month of data. </p>
+            <div id="data_select">
+                <label>Filter by Area:</label>
+                <select name="area" multiple>
+                    <option value="all">ALL</option>
+                    <option value="Highbridge">Highbridge</option>
+                    <option value="Harlem">Harlem</option>
+                    <option value="UWS">UWS</option>
+                    <option value="UES">UES</option>
+                    <option value="Midtown">Midtown</option>
+                    <option value="Greenwich_Village">Greenwich Village</option>
+                    <option value="East_Village">East Village</option>
+                    <option value="Lower_Manhattan">Lower Manhattan</option>
+                </select>
+                <label for="avoid_length">Avoid List Size</label>
+                <input type="number" name="avoid_length" id="avoid_length" value="25">
+            </div>
+            <hr>
+            <div id="rr_display">
+                <label for="avoid_list">Avoid List:</label>
+                <ol>
+                    <li>IHOP, 135th and Powell, 1.5 hrs</li>
+                    <li>Popeyes, 145th and Fredrick Douglas, 45 mins</li>
+                    <li>McDonalds, 117th and 3rd, 45 mins</li>
+                    <li>Chik Fil A, 86th and 3rd, 20 mins</li>
+                    <li>Shake Shack, 145th, 20 mins</li>
+                    <li>...</li>
+                </ol>
+                <label for="rr_search">Search by name or address:</label>
+                <input name="rr_search" id="rr_search" type="text">
+                <br>
+                <label for="all_restaurants">All Restaurants:</label>
+                <ol id="all_restaurants">
+                    <li>Sidewalk Tacos, 111th and 2nd, 0 mins</li>
+                    <li>...</li>
+                    <li>Parm, 71st and Columbus, 2 mins</li>
+                    <li>...</li>
+                    <li>IHOP, 135th and Powell, 1.5 hrs</li>
+                </ol>
+            </div>
+        </main>
         <footer>
             <h5>&copy; SmartCourier 2022   Contact: benkent15@gmail.com</h5>
         </footer>

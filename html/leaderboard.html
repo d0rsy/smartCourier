@@ -27,9 +27,70 @@
                     <a href="login.html">
                         <li><button>Login</button></li>
                     </a>
+                    <a href="settings.html">
+                        <li>Settings</li>
+                    </a>
                 </ul>
             </nav>
         </header>
+        <h3>Leaderboard</h3>
+        <div id="lead_settings">
+            <label for="data_range">Data Range:</label>
+            <select name="data_range" id="data_range">
+                <option value="all" selected>All time</option>
+                <option value="7">Last 7 days</option>
+                <option value="30">Last 30 days</option>
+                <option value="custom_rangeL">Custom</option>
+            </select>
+            <label for="start_dateL">Start Date</label>
+            <input type="date" name="start_dateL" id="start_dateL">
+            <label for="end_dateL">End Date</label>
+            <input type="date" name="end_dateL" id="end_dateL">
+        </div>
+        <div id="lead_table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Courier</th>
+                        <th>Vehicle</th>
+                        <th>$/Hour</th>
+                        <th>Pickup Time</th>
+                        <th>Dropoff Time</th>
+                        <th>Dead Time/Hour</th>
+                        <th>Average Tip</th>
+                        <th>$/Order</th>
+                        <th>Time/Order</th>
+                        <th>Speed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="Profile:user.html">d0rsy</a></td>
+                        <td>Arrow 10</td>
+                        <td>$29</td>    
+                        <td>3 mins</td>
+                        <td>7 mins</td>
+                        <td>11 mins</td>
+                        <td>$3.48</td>
+                        <td>$9.75</td>
+                        <td>19 mins</td>
+                        <td>9 mph</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <footer>
             <h5>&copy; SmartCourier 2022   Contact: benkent15@gmail.com</h5>
         </footer>
