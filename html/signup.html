@@ -1,8 +1,7 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
     <head>
-        <title> SC - Login </title>
-        <!-- Login -->
+        <title>SC - Signup</title>
     </head>
     <body>
         <header>
@@ -37,27 +36,23 @@
             </nav>
         </header>
         <main>
-            <h3>Login</h3>
-            <div id="login_form">
-                <form action="profile_login" method="POST">
-                    <label for="user_in">Username:</label>
-                    <input type="text" name="user_in" id="user_in">
+            <h3>Sign Up</h3>
+            <div id="signup">
+                <form id="signup_form" action="create.profile" method="POST">
+                    <label for="username_create">Create a Username:</label>
+                    <input name="username_create" id="username_create" type="text">
                     <br>
-                    <label for="pass_in">Password:</label>
-                    <input type="text" name="pass_in" id="pass_in">
+                    <label for="pass_create">Create a Password:</label>
+                    <input name="pass_create" id="pass_create" type="text">
                     <br>
-                    <label for="remember_me"><abbr title="Check this box to stay logged in when you exit the site. Not recommended for public computers.">Remember Me</abbr></label>
-                    <input type="checkbox" name="remember_me" value="cookie_remember" id="remember_me">
+                    <label for="pass_retype">Re-type Password:</label>
+                    <input name="pass_retype" id="pass_retype" type="text">
                     <br>
                     <br>
                     <input type="submit">
-                    <br>
-                    <p>Not yet a member? Sign up <a href="signup.html">here</a>.</p>
+                    <p>Already a memeber? Sign in <a href="login.html">here</a>.</p>
                 </form>
             </div>
         </main>
-        <footer>
-            <h5>&copy; SmartCourier 2022   Contact: benkent15@gmail.com</h5>
-        </footer>
     </body>
 </html>
