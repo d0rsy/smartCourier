@@ -40,8 +40,8 @@
             <h3>Restaurant Rankings</h3>
             <p>This tool shows you all restaurants, sorted by wait times on pickup. This wait time isn't included in trip estimates and can reduce your profitablility if the payout isn't big enough to compensate for the wasted time. Use the Avoid List for your area to find the worst offenders based on the last month of data. </p>
             <div id="data_select">
-                <label>Filter by Area:</label>
-                <select name="area" multiple>
+                <label for="area_filter">Filter by Area:</label>
+                <select id="area_filter" name="area" multiple>
                     <option value="all">ALL</option>
                     <option value="Highbridge">Highbridge</option>
                     <option value="Harlem">Harlem</option>
@@ -58,7 +58,7 @@
             <hr>
             <div id="rr_display">
                 <label for="avoid_list">Avoid List:</label>
-                <ol>
+                <ol id="avoid_list">
                     <li>IHOP, 135th and Powell, 1.5 hrs</li>
                     <li>Popeyes, 145th and Fredrick Douglas, 45 mins</li>
                     <li>McDonalds, 117th and 3rd, 45 mins</li>

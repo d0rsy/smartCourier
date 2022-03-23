@@ -37,17 +37,18 @@
         </header>
         <main>
             <div id="profile_settings">
-                <img src="users/username/profile.jpg" alt="profile picture">
-                <a href="upload??">Edit Profile Picture</a>
+                <h3>Profile Settings</h3>
+                <a href="upload??"><button type="button"><img src="../assets/_images/_un-optimized/BK_profile.jpg" alt="profile picture"></button></a>
+                <!-- add an "edit" overlay to profile picture-->
 
                 <label for="bio">Bio:</label>
-                <input type="text" name="bio" id="bio">
+                <input type="text" id="bio" name="bio">
                 <!--^autofill with current bio-->
 
                 <label for="profile_vehicle">Vehicle:</label>
                 <input type="text" name="profile_vehicle" id="profile_vehicle">
 
-                <label for="profile_company"></label>
+                <label for="profile_company">Companies you've worked with:</label>
                 <select name="profile_company" id="profile_company" multiple>
                     <option value="ALL" selected>ALL</option>
                     <option value="Uber_Eats">Uber Eats</option>
@@ -59,7 +60,26 @@
                 <input type="text" name="profile_years" id="profile_years">
             </div>
             <div id="privacy_settings">
-                
+                <h3>Privacy Settings</h3>
+                <p><abbr title="Control what other people will see when they click on your profile or see you on the leaderboard.">Profile Visibility</abbr></p>
+                <input type="radio" id="public" name="visibility" value="public">
+                <label for="public"><abbr title="Your name and profile info will be visible to anyone who visits the site.">Public</abbr></label>
+                <br>
+                <input type="radio" id="members" name="visibility" value="members">
+                <label for="members"><abbr title="Your name and profile info will be visible to verified members only">Members Only</abbr></label>
+                <br>
+                <input type="radio" id="private" name="visibility" value="private" checked="checked">
+                <label for="private"><abbr title="Your name and profile will be fully anonymized.">Private</abbr></label>
+                <br>
+                <input type="radio" id="ghost" name="visibility" value="ghost">
+                <label for="ghost"><abbr title="You won't be listed on leaderboards and your profile will be inaccessible. Your raw data will still contribute to the total pool.">Ghost</abbr></label>
+            </div>
+            <div id="data_settings">
+                <h3>Data Settings</h3>
+                <p>The data you've uploaded to our database is your own. You have the right to have it deleted. If you request to have your data removed, your membership will be paused until you upload again. This action can't be undone.</p>
+                <a href="verify_credenitals_confirm_deletion"><button type="button">Remove My Data</button></a>
+                <br>
+                <p>For a full explanation of how SmartCourier uses your data, click <a href="FAQ.html/focus.data">here</a>.</p>
             </div>
         </main>
         <footer>
